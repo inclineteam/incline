@@ -21,7 +21,7 @@ const Main = () => {
         and software solutions to help your business grow and enhance its
         digital presence.
       </h2>
-      <div className="mt-10 flex items-center justify-center space-x-2">
+      <div className="mt-10 mb-10 flex items-center justify-center space-x-2">
         <Link
           href="#"
           className="flex items-center space-x-4 rounded-lg border-t border-transparent border-blue-500 bg-blue-600 px-6 py-3 font-semibold text-white"
