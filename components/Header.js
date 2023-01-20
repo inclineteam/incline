@@ -17,7 +17,7 @@ const Header = () => {
       </div>
 
       <nav className="flex flex-[1.2] items-center justify-center space-x-10 font-medium text-white/70">
-        <Link href="#" className="hover:text-white">
+        <Link href="#getintouch" className="scroll-smooth hover:text-white">
           <div>Services</div>
         </Link>
         <Link href="#" className="hover:text-white">
