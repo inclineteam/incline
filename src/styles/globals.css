@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    #121220 63.54%,
+    #5e25ff 100%
+  );
+}
