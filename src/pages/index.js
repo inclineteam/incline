@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Incline - Showcase a better website</title>
+        <title>Incline - Synergistic Fusion</title>
         <meta
           property="og:title"
-          content="Incline -  Showcase a better website"
+          content="Incline -  Synergistic Fusion"
         />
         <meta
           property="og:description"
-          content="We build elegant responsive websites, landing pages, web applications, and software solutions to help your business grow and enhance its digital presence."
+          content="Incline Team is a dynamic startup agency that unifies freelancers, open-source developers, and an agency environment, creating a powerful synergy. Our exceptional ecosystem thrives on fostering collaboration and growth by seamlessly connecting experienced mentors, ambitious students, and clients."
         />
         <meta property="og:image" content="/og-img.png" />
       </Head>
@@ -32,7 +32,7 @@ export default function Home() {
 
             <nav className="hidden md:flex items-center font-medium text-sm absolute left-1/2 -translate-x-1/2 space-x-10 top-1/2 -translate-y-1/2">
               <Link href="/about">About</Link>
-              <Link href="/projects">Projects</Link>
+              <Link href="https://github.com/orgs/inclineteam/repositories" target="_blank">Projects</Link>
               <Link href="/services">Services</Link>
               <Link href="/blogs">Blogs</Link>
               <Link href="/design" className="flex items-center space-x-1">
@@ -59,21 +59,23 @@ export default function Home() {
         </div>
         <main className="px-4 max-w-6xl mx-auto pt-10 pb-20">
           <h1 className="text-4xl md:text-6xl font-['Apfel'] text-center mb-4">
-            Showcase a better website.
+            Welcome to Incline Team!
           </h1>
           <p className="text-[#E4E4FB]/60 max-w-[64ch] mx-auto text-center md:text-lg">
-            We build elegant responsive websites, landing pages, web
-            applications, and software solutions to help your business grow and
-            enhance its digital presence.
+           Incline Team is a dynamic startup agency that unifies freelancers, open-source developers,
+            and an agency environment, creating a powerful synergy. Our exceptional ecosystem thrives 
+            on fostering collaboration and growth by seamlessly connecting experienced mentors, ambitious students, and clients.
           </p>
 
           <div className="mt-10 flex items-center justify-center">
+          <Link href="https://github.com/orgs/inclineteam/repositories" target="_blank">
             <button className="font-semibold flex items-center bg-[#2F314F]/30 p-1 pl-4 rounded-full border-[#D2D1FF]/20 border space-x-3">
               <p>See projects we've built</p>
               <div className="p-0.5 rounded-full bg-[#35385C]/40 border border-[#8388CD]/20">
                 <ChevronRightOutlined className="w-6 h-6" />
               </div>
             </button>
+          </Link>
           </div>
         </main>
       </div>
