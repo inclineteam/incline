@@ -48,7 +48,7 @@ export default function Home() {
             </button>
           </header>
 
-          <div className="pt-[50%] pt-[10%] border-b flex justify-center border-[#35396F]/20">
+          <div className="pt-[20vh] pb-[5rem] border-b flex justify-center border-[#35396F]/20">
             <Image
               src="/incline.svg"
               width={330}
