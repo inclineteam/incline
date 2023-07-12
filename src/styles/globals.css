@@ -3,9 +3,31 @@
 @tailwind utilities;
 
 .app {
-  background: radial-gradient(
-    100% 100% at 50% 0%,
-    #121220 63.54%,
-    #5e25ff 100%
-  );
+  background: #160e27;
+}
+
+.blur-bg {
+  background-image: url("/blur.svg");
+  background-repeat: no-repeat;
+  @apply [background-size:600px] [background-position:center_20px] md:[background-size:800px] md:[background-position:right_top];
+}
+
+.ray-blur {
+  background-image: url("/ray-blur.svg");
+  background-repeat: no-repeat;
+  @apply [background-size:500px] [background-position:top] md:[background-size:1000px] md:[background-position:right_top];
+}
+
+.blog {
+  @apply py-2 md:py-6;
+}
+
+.blog p {
+  @apply first:mt-0 mt-6 text-base md:text-lg leading-relaxed max-w-[64ch] font-light text-slate-800;
+}
+
+button,
+a,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
 }
