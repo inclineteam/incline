@@ -20,7 +20,7 @@ export default function Blogs({ blogs }) {
 
       <div className="border-t mt-6 pt-8 border-[#B08FFF]/10">
         <p className="mb-4 text-[#E2C16B] text-sm font-medium">Latest blogs</p>
-        {blogs.map((blog) => (
+        {blogs.length > 0  ? blogs.map((blog) => (
           <div
             key={blog.slug}
             className="border-b mb-6 last:border-transparent border-[#B08FFF]/10 pb-6"
@@ -47,7 +47,7 @@ export default function Blogs({ blogs }) {
               </span>
             </div>
           </div>
-        ))}
+        )) : <div>No blogs yet. Stay tuned!</div>}
       </div>
     </MainLayout>
   );

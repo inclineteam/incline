@@ -14,12 +14,12 @@ export default function EmailUs() {
         <h1 className="mb-4 text-[#E2C16B]">Compose Email</h1>
         <form
           action="mailto:inclinedevs@gmail.com"
-          className="border border-[#B08FFF]/10 p-6 rounded-lg"
+          className="bg-[#B08FFF]/[0.05] p-6 rounded-lg"
         >
-          <div className="mb-6">
+          <div className="group mb-6">
             <label
               htmlFor="subject"
-              className="text-sm font-medium text-[#958AB2]"
+              className="group-focus-within:text-white text-sm font-medium text-[#958AB2]"
             >
               Your Name
             </label>
@@ -31,10 +31,10 @@ export default function EmailUs() {
             />
           </div>
 
-          <div className="mb-6">
+          <div className="mb-6 group">
             <label
               htmlFor="body"
-              className="text-sm font-medium text-[#958AB2]"
+              className="group-focus-within:text-white text-sm font-medium text-[#958AB2]"
             >
               Body
             </label>

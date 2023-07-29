@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import ScrollProgress from "./scroll-progress";
 
 const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState();
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;

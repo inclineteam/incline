@@ -6,7 +6,7 @@ import { links } from "@/data/links";
 
 const LinkSidebar = () => {
   return (
-    <div className="hidden lg:block border-r py-10 border-[#271F3C] pr-4 min-w-[250px] h-screen">
+    <div className="hidden lg:block border-r py-10 border-[#271F3C] pr-4 min-w-[250px] sticky top-0 h-screen">
       <Link href="/" className="px-3 flex items-center space-x-3">
         <Image src="/logo.svg" alt="" height={30} width={30} />
         <h1 className="text-2xl tracking-tight font-medium text-white">
@@ -33,7 +33,7 @@ const LinkSidebar = () => {
           </Link>
         </div>
         <nav className="space-y-3 flex flex-col">
-          {links.map((link, i) => <LinkSidebarItem key={i} link={link.to} label={link.name} />)}
+          {links.map((link, i) => <LinkSidebarItem key={i} link={link.to} label={link.name} Icon={link.icon} />)}
         </nav>
       </main>
     </div>

@@ -10,7 +10,7 @@ const bVPro = Be_Vietnam_Pro({
 export default function App({ Component, pageProps }) {
   return (
     <div className={bVPro.className}>
-      <NextNProgress options={{ showSpinner: false }} />
+      <NextNProgress color="#E2C16B" options={{ showSpinner: false }} />
       <Component {...pageProps} />
     </div>
   );

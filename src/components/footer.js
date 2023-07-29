@@ -6,8 +6,8 @@ import { CursorClick } from '@phosphor-icons/react'
 
 const Footer = () => {
 	return (
-		<footer className='pt-10 pb-32 w-full border-t text-sm border-[#271F3C] mx-auto px-6 md:px-10'>
-			<div className="max-w-7xl lg:flex lg:items-start mx-auto">
+		<footer className='pt-10 pb-20 w-full border-t text-sm border-[#271F3C] mx-auto'>
+			<div className="max-w-7xl lg:flex lg:items-start mx-auto px-6">
 				<div className="flex items-center text-[#958AB2] space-x-4">
 					<Image src='/logo.svg' width={40} height={40} />
 					<p className='leading-relaxed'>© 2023 Incline Team. <br /> All rights reserved.</p>
@@ -29,6 +29,26 @@ const Footer = () => {
 								<a href="/" className='text-[#958AB2] hover:text-white'>Facebook</a>
 								<a href="/" className='text-[#958AB2] hover:text-white'>Github</a>
 								<a href="/" className='text-[#958AB2] hover:text-white'>Twitter</a>
+						</div>
+					</div>
+
+										<div>
+						<p className='text-white mb-4 font-medium'>Resources</p>
+						<div className="flex space-y-3 flex-col">
+								<a href="/" className='text-[#958AB2] hover:text-white'>Source code</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Meow</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Dummy</a>
+						</div>
+					</div>
+
+										<div>
+						<p className='text-white mb-4 font-medium'>Help</p>
+						<div className="flex space-y-3 flex-col">
+								<a href="/" className='text-[#958AB2] hover:text-white'>Customer service</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Ewan</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Wala</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Na ko</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Malagay</a>
 						</div>
 					</div>
 				</div>
