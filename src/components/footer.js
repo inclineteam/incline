@@ -26,18 +26,18 @@ const Footer = () => {
 					<div>
 						<p className='text-white mb-4 font-medium'>Socials</p>
 						<div className="flex space-y-3 flex-col">
-								<a href="/" className='text-[#958AB2] hover:text-white'>Facebook</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Github</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Twitter</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>LinkedIn</a>
+								<a href="https://www.facebook.com/inclineteam" target="_blank" className='text-[#958AB2] hover:text-white'>Facebook</a>
+								<a href="https://github.com/inclineteam" target="_blank" className='text-[#958AB2] hover:text-white'>Github</a>
+								<a href="https://twitter.com/inclineteam_" target="_blank" className='text-[#958AB2] hover:text-white'>Twitter</a>
+								<a href="https://www.linkedin.com/company/96308721" target="_blank" className='text-[#958AB2] hover:text-white'>LinkedIn</a>
 						</div>
 					</div>
 
 										<div>
 						<p className='text-white mb-4 font-medium'>Resources</p>
 						<div className="flex space-y-3 flex-col">
-								<a href="/" className='text-[#958AB2] hover:text-white'>Open Source</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Contribute</a>
+								<a href="https://github.com/inclineteam" target="_blank" className='text-[#958AB2] hover:text-white'>Open Source</a>
+								<a href="https://github.com/inclineteam" target="_blank" className='text-[#958AB2] hover:text-white'>Contribute</a>
 								<a href="/" className='text-[#958AB2] hover:text-white'>Newsletter</a>
 						</div>
 					</div>
@@ -51,8 +51,8 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-
-				 <button className="mt-10 ml-14 lg:mt-0 lg:ml-auto flex select-none bg-[#E2C16B] text-[#160e27] text-sm items-center space-x-2 px-4 py-1.5 rounded-full">
+			
+			<button className="mt-10 ml-14 lg:mt-0 lg:ml-auto flex select-none bg-[#E2C16B] text-[#160e27] text-sm items-center space-x-2 px-4 py-1.5 rounded-full">
               <span className="font-semibold">Get in touch</span>
               <CursorClick weight="fill" />
             </button>
