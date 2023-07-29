@@ -29,26 +29,25 @@ const Footer = () => {
 								<a href="/" className='text-[#958AB2] hover:text-white'>Facebook</a>
 								<a href="/" className='text-[#958AB2] hover:text-white'>Github</a>
 								<a href="/" className='text-[#958AB2] hover:text-white'>Twitter</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>LinkedIn</a>
 						</div>
 					</div>
 
 										<div>
 						<p className='text-white mb-4 font-medium'>Resources</p>
 						<div className="flex space-y-3 flex-col">
-								<a href="/" className='text-[#958AB2] hover:text-white'>Source code</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Meow</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Dummy</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Open Source</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Contribute</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Newsletter</a>
 						</div>
 					</div>
 
 										<div>
 						<p className='text-white mb-4 font-medium'>Help</p>
 						<div className="flex space-y-3 flex-col">
-								<a href="/" className='text-[#958AB2] hover:text-white'>Customer service</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Ewan</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Wala</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Na ko</a>
-								<a href="/" className='text-[#958AB2] hover:text-white'>Malagay</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Customer Service</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Privacy Policy</a>
+								<a href="/" className='text-[#958AB2] hover:text-white'>Terms of Service</a>
 						</div>
 					</div>
 				</div>
