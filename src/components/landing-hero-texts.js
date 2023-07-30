@@ -34,9 +34,9 @@ const Title = () => (
 
 const Description = () => (
   <p className="md:text-lg text-base leading-relaxed font-light max-w-[40ch] text-[#958AB2] mx-auto">
-    We build elegant responsive websites, landing pages, web applications, and
-    software solutions to help your business grow and enhance its digital
-    presence.{" "}
+    We build elegant responsive websites, web applications, and custom
+    software solutions to help your business grow, stand out from the digital
+    market, and boost lead generation!{" "}
   </p>
 );
 

@@ -12,8 +12,8 @@ export default function About() {
   return (
     <MainLayout title="Projects">
       <p className="text-[#958AB2] font-light max-w-[64ch] text-base/relaxed">
-        We do also do team projects to help us collaborate with each other,
-        making the team in sync when doing tasks.
+        We also do team projects to help us collaborate with each other,
+         making the team in sync when doing tasks.
       </p>
 
       <div className="border-t mt-4 pt-12 border-[#B08FFF]/10">

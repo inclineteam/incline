@@ -31,13 +31,24 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Incline - Synergistic Fusion</title>
-        <meta property="og:title" content="Incline -  Synergistic Fusion" />
-        <meta
-          property="og:description"
-          content="Incline Team is a dynamic startup agency that unifies freelancers, open-source developers, and an agency environment, creating a powerful synergy. Our exceptional ecosystem thrives on fostering collaboration and growth by seamlessly connecting experienced mentors, ambitious students, and clients."
-        />
-        <meta property="og:image" content="/og-img.png" />
+      {/* <!-- Primary Meta Tags --> */}
+      <title>Incline - Software Development: Web, Mobile, & AI apps</title>
+      <meta name="title" content="Incline - Software Development: Web, Mobile, & AI apps" />
+      <meta name="description" content="We build elegant responsive websites, web applications, and custom software solutions to help your business grow, stand out from the digital market, and boost lead generation!" />
+
+      {/* <!-- Open Graph / Facebook --> */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://inclineteam.vercel.app/" />
+      <meta property="og:title" content="Incline - Software Development: Web, Mobile, & AI apps" />
+      <meta property="og:description" content="We build elegant responsive websites, web applications, and custom software solutions to help your business grow, stand out from the digital market, and boost lead generation!" />
+      <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+      {/* <!-- Twitter --> */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://inclineteam.vercel.app/" />
+      <meta property="twitter:title" content="Incline - Software Development: Web, Mobile, & AI apps" />
+      <meta property="twitter:description" content="We build elegant responsive websites, web applications, and custom software solutions to help your business grow, stand out from the digital market, and boost lead generation!" />
+      <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
       </Head>
       <div className={"h-auto min-h-screen items-center app relative"}>
 
