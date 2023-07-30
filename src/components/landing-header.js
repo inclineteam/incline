@@ -7,7 +7,7 @@ const LandingHeader = ({ openMobileNav, setOpenMobileNav }) => {
 
 	return (
 		<header
-			className={`z-[60] sticky duration-300 top-10 overflow-hidden mx-auto px-3 -mx-4 py-2 rounded-full flex items-center backdrop-blur-lg justify-between ${
+			className={`z-[60] sticky duration-300 top-10 overflow-hidden mx-auto px-3 py-2 rounded-full flex items-center backdrop-blur-lg justify-between ${
 				openMobileNav ? "bg-white/10 top-28" : "top-6"
 			}`}
 		>

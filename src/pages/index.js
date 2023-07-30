@@ -53,7 +53,7 @@ export default function Home() {
             <LandingHeader openMobileNav={openMobileNav} setOpenMobileNav={setOpenMobileNav} />
             <LandingNav openMobileNav={openMobileNav} setOpenMobileNav={setOpenMobileNav} />
 
-            <main className="py-20 flex">
+            <main className="py-20 lg:px-3 flex">
               <LandingHeroTexts />
               {/* <Image
                 src="/hero-images.png"
@@ -71,7 +71,18 @@ export default function Home() {
               }} className="ml-auto -mt-28 -mb-10 relative z-[55]">
               </div>
             </main>
+
+          <div className="flex items-center flex-col">
+            <Image src='/team.svg' width={80} height={80} />
+            <p className="text-[#E2C16B] font-medium mt-4 mb-2 text-center">Incline Team</p>
+            <div>
+              <p>
+                We are a passionate and enthusiastic group of tech enthusiasts who thrive on turning ideas into reality. Our team is driven by a collective commitment to excellence, fueled by the love of technology, and empowered by the joy of creating innovative solutions that make a positive impact.
+              </p>
+            </div>
           </div>
+          </div>
+
         </div>
 
         <Footer />

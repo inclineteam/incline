@@ -7,7 +7,7 @@ import { CursorClick } from '@phosphor-icons/react'
 const Footer = () => {
 	return (
 		<footer className='pt-10 pb-20 w-full border-t text-sm border-[#271F3C] mx-auto'>
-			<div className="max-w-7xl lg:flex lg:items-start mx-auto px-6">
+			<div className="max-w-7xl lg:flex lg:items-start mx-auto px-10">
 				<div className="flex items-center text-[#958AB2] space-x-4">
 					<Image src='/logo.svg' width={40} height={40} />
 					<p className='leading-relaxed'>© 2023 Incline Team. <br /> All rights reserved.</p>
