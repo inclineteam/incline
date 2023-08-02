@@ -1,0 +1,19 @@
+<svg width="82" height="135" viewBox="0 0 82 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_201_2)">
+<circle cx="50.522" cy="50.522" r="50.462" transform="matrix(-1 0 0 1 67.0879 16.6484)" stroke="url(#paint0_radial_201_2)" stroke-width="0.119862"/>
+<circle cx="69.478" cy="69.478" r="69.3956" transform="matrix(-1 0 0 1 81.7583 -5.93408)" stroke="url(#paint1_radial_201_2)" stroke-width="0.164835"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_201_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.3901 80.6868) rotate(-69.8959) scale(36.6858)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#A181FF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_201_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.7198 76.978) rotate(50.1345) scale(80.7477)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#A181FF" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_201_2">
+<rect width="81.7582" height="135" fill="white"/>
+</clipPath>
+</defs>
+</svg>
