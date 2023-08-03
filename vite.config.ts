@@ -12,5 +12,10 @@ export default defineConfig(() => {
         "Cache-Control": "public, max-age=600",
       },
     },
+    resolve: {
+      alias: {
+        $public: './public'
+      }
+    }
   };
 });

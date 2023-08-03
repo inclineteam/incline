@@ -9,7 +9,7 @@ const LandingHeader = component$(() => {
 			class={`z-[60] max-w-7xl mx-auto w-full sticky duration-300 top-10 overflow-hidden mx-auto px-3 py-2 rounded-full flex items-center top-6 backdrop-blur-lg justify-between`}
 		>
 			<Link href="/" class="flex items-center space-x-3">
-				<img src="http://localhost:3000/logo.svg" alt="Incline" height={30} width={30} />
+				<img src="/logo.svg" alt="Incline" height={30} width={30} />
 				<h1 class="text-2xl tracking-tight font-medium text-white">
 					Incline
 				</h1>

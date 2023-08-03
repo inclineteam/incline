@@ -43,3 +43,9 @@ lerna-debug.log*
 # Vercel
 .vercel
 .env
+
+# Netlify
+.netlify
+
+# Cloudflare
+functions/**/*.js
