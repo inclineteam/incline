@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { LuArrowRight, LuPhone } from "@qwikest/icons/lucide";
 import LucideShapes from '~icons/lucide/shapes'
 import LucidePhone from '~icons/lucide/phone'
 import LucideArrowRight from '~icons/lucide/arrow-right'

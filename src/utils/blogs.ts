@@ -1,18 +1,20 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
+ import { type Entry, createClient } from "contentful";
+import type { RequestEvent, RequestEventLoader } from "@builder.io/qwik-city";
+import dayjs from 'dayjs'
 
 export interface Blog {
   content: string;
   title: string;
-  date: string;
+  date: Date;
   author: string;
   description: string;
-  slug: string;
-  readingTime: number;
 }
 
-const blogsDir = path.resolve(process.env.PWD + "/blogs");
+
+const getClient = (requestEvent: RequestEvent | RequestEventLoader<QwikCityPlatform>) => createClient({
+  space: requestEvent.env.get('CONTENTFUL_SPACE_ID')!,
+  accessToken: requestEvent.env.get('CONTENTFUL_ACCESS_TOKEN')!
+})
 
 const determineReadingTime = (article: string) => {
   const wpm = 225;
@@ -22,40 +24,39 @@ const determineReadingTime = (article: string) => {
   return time;
 };
 
-export const getAllBlogs = () => {
-  const blogFiles = fs.readdirSync(blogsDir);
-  const blogPosts = blogFiles.filter((file) => file.endsWith(".md"));
+export const getAllBlogs = async (requestEvent: RequestEvent | RequestEventLoader<QwikCityPlatform>) => {
+  const contentful = getClient(requestEvent)
+  const blogEntry = await contentful.getEntries({ content_type: 'blog' })
+  const blogs = blogEntry.items.length > 0 ? blogEntry.items.map((entry) => convertToBlog(entry)) : []
 
-  const blogs = blogPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`${blogsDir}/${fileName}`, "utf-8");
-    const blogData = matter(fileContents);
-    const readingTime = determineReadingTime(blogData.content);
-
-    return {
-      title: blogData.data.title,
-      date: blogData.data.date,
-      description: blogData.data.description,
-      author: blogData.data.author,
-      slug: fileName.replace(".md", ""),
-      readingTime,
-    };
-  });
-
-  return blogs;
+  return blogs
 };
 
-export const getBlogBySlug = (slug: string): Blog => {
-  const fileContents = fs.readFileSync(`${blogsDir}/${slug}.md`, "utf-8");
-  const blogData = matter(fileContents);
-  const readingTime = determineReadingTime(blogData.content);
-
+const convertToBlog = (entry: Entry) => {
   return {
-    content: blogData.content,
-    title: blogData.data.title,
-    date: blogData.data.date,
-    author: blogData.data.author,
-    description: blogData.data.description,
-    slug,
-    readingTime,
-  };
-};
+    title: entry.fields.title as string,
+    author: entry.fields.author as string,
+    date: dayjs(entry.fields.date as string).format('MMMM D, YYYY'),
+    tags:  entry.fields.tags as string[],
+    content:  entry.fields.content as string,
+    slug: (entry.fields.title as string).toLowerCase().replace(' ', '-'),
+    description:  entry.fields.description as string,
+    readingTime: determineReadingTime(entry.fields.title as string)
+  }
+}
+
+// export const getBlogBySlug = (slug: string): Blog => {
+//   const fileContents = fs.readFileSync(`${blogsDir}/${slug}.md`, "utf-8");
+//   const blogData = matter(fileContents);
+//   const readingTime = determineReadingTime(blogData.content);
+
+//   return {
+//     content: blogData.content,
+//     title: blogData.data.title,
+//     date: blogData.data.date,
+//     author: blogData.data.author,
+//     description: blogData.data.description,
+//     slug,
+//     readingTime,
+//   };
+// };

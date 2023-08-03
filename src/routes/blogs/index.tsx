@@ -1,17 +1,17 @@
 import MainLayout from "~/components/main-layout";
 import { routeLoader$, type DocumentHead, Link } from "@builder.io/qwik-city";
 import { metaDefaults } from "~/data/meta-defaults";
-import { Blog, getAllBlogs } from "~/utils/blogs";
+import { getAllBlogs } from "~/utils/blogs";
 import LucideAlarmClock from '~icons/lucide/alarm-clock'
 import { Fragment, component$ } from "@builder.io/qwik";
 
 const metaTitle = 'Blogs | Incline - Software Development: Web & Mobile apps'
 const description = 'Read stuffs relevant to our agency! We write about our journey, and experiences, and current projects here.'
 
-export const useBlogs = routeLoader$(async() => {
-  const blogs = getAllBlogs()
+export const useBlogs = routeLoader$(async(requestEvent) => {
+  const blogs = await getAllBlogs(requestEvent)
 
-  return blogs as Blog[]
+  return blogs
 })
 
 export default component$(() => {

@@ -27,6 +27,7 @@
     "@iconify-json/lucide": "^1.1.113",
     "@svgx/core": "^1.0.1",
     "@types/eslint": "8.40.2",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.4.0",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
@@ -47,8 +48,12 @@
     "@iconify-json/ic": "^1.1.13",
     "@qwikest/icons": "^0.0.8",
     "@unpic/qwik": "^0.0.24",
+    "contentful": "^10.4.0",
+    "dayjs": "^1.11.9",
+    "fs-extra": "^11.1.1",
     "gray-matter": "^4.0.3",
     "lucide": "^0.263.0",
-    "lucide-qwik": "^1.0.0"
+    "lucide-qwik": "^1.0.0",
+    "path": "^0.12.7"
   }
 }

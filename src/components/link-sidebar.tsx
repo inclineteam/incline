@@ -1,6 +1,6 @@
 
 import LinkSidebarItem from "./link-sidebar-item";
-import { $, component$, qrl } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { links } from "~/data/links";
 import { Link } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";

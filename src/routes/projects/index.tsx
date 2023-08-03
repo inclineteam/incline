@@ -14,8 +14,8 @@ export default component$(() => {
   return (
     <MainLayout title="Projects" subtitle={description}>
       <div class="border-t mt-6 pt-12 border-[#B08FFF]/10">
-        {data.map((project) => (
-          <div class="border-b mb-6 last:border-transparent border-[#B08FFF]/10 pb-6">
+        {data.map((project, i) => (
+          <div key={i} class="border-b mb-6 last:border-transparent border-[#B08FFF]/10 pb-6">
             <Image
               src={project.icon}
               width={40}

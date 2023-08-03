@@ -1,6 +1,7 @@
-import { QRL, QwikIntrinsicElements, component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { Link, useLocation } from "@builder.io/qwik-city";
-import { FunctionComponent, JSX } from "@builder.io/qwik/jsx-runtime";
+import type {QRL} from "@builder.io/qwik";
+import type { JSX } from "@builder.io/qwik/jsx-runtime";
 
 interface LinkItem {
   link: string;
