@@ -6,7 +6,7 @@ import Icons from 'unplugin-icons/vite'
 
 export default defineConfig(() => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), Icons({compiler: 'qwik'})],
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), Icons({ compiler: 'qwik' })],
     preview: {
       headers: {
         "Cache-Control": "public, max-age=600",

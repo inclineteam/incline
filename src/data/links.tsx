@@ -24,11 +24,6 @@ export const links = [
     icon: $(() => <LucideShapes class={iconClass} />)
   },
   {
-    name: "Blogs",
-    to: "/blogs",
-    icon: $(() => <LucideNewspaper class={iconClass} />)
-  },
-  {
     name: "Socials",
     to: "/socials",
     icon: $(() => <LucideLaptop2 class={iconClass} />)
