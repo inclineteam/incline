@@ -1,7 +1,6 @@
 import LucideUsers2 from '~icons/lucide/users-2'
 import LucidePackage from '~icons/lucide/package'
 import LucideShapes from '~icons/lucide/shapes'
-import LucideNewspaper from '~icons/lucide/newspaper'
 import LucideLaptop2 from '~icons/lucide/laptop-2'
 import { $ } from '@builder.io/qwik'
 
