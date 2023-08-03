@@ -1,6 +1,5 @@
 
 import LinkSidebarItem from "./link-sidebar-item";
-import { ArrowRight, CursorClick } from "@phosphor-icons/react";
 import { $, component$, qrl } from "@builder.io/qwik";
 import { links } from "~/data/links";
 import { Link } from "@builder.io/qwik-city";
