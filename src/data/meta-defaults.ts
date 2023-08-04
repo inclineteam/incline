@@ -9,7 +9,7 @@ export const metaDefaults = [
 	},
 	{
 		property: "og:image",
-		content: "/og-image.png",
+		content: "https://res.cloudinary.com/dkbqrr1at/image/upload/v1691159477/incline/og-img_1_h7punh.png",
 	},
 	{
 		property: "twitter:card",
@@ -21,6 +21,6 @@ export const metaDefaults = [
 	},
 	{
 		property: "twitter:image",
-		content: "/og-image.png",
+		content: "https://res.cloudinary.com/dkbqrr1at/image/upload/v1691159477/incline/og-img_1_h7punh.png",
 	},
 ];

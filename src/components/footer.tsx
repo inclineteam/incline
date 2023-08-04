@@ -15,7 +15,7 @@ const Footer = component$(() => {
 					</p>
 				</div>
 
-				<div class="ml-14 lg:ml-20 flex pt-14 lg:pt-0 space-x-10 lg:space-x-20 flex-wrap">
+				<div class="ml-14 lg:ml-20 lg:mr-auto flex pt-14 lg:pt-0 space-x-10 lg:space-x-20 flex-wrap">
 					<div>
 						<p class="text-white mb-4 font-medium">Links</p>
 						<div class="flex space-y-3 flex-col">
@@ -104,10 +104,10 @@ const Footer = component$(() => {
 					</div>
 				</div>
 
-				<button class="mt-10 ml-14 lg:mt-0 lg:ml-auto flex select-none bg-[#E2C16B] text-[#160e27] text-sm items-center space-x-2 px-4 py-1.5 rounded-full">
-					<span class="font-semibold">Get in touch</span>
-					<LucideMousePointer class="w-5 h-5 stroke-2" />
-				</button>
+			<Link href="/contacts" role="button" class="duration-150 w-max hidden md:flex select-none bg-[#E2C16B] text-[#160e27] text-sm items-center space-x-2 relative px-4 py-1.5 rounded-full hover:bg-[#EED288] hover:shadow-[0_0_16px_0] hover:shadow-[#E2C16B]/30">
+				<span class="font-semibold relative">Get in touch</span>
+				<LucideMousePointer class="stroke-2 w-5 h-5 relative" />
+			</Link>
 			</div>
 		</footer>
 	);

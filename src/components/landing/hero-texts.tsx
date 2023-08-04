@@ -43,7 +43,7 @@ const Description = () => (
 
 const CTAButton = () => (
   <Link href="/contact">
-    <button class="border duration-300 border-white/20 select-none flex bg-[#E2C16B] text-[#160e27] hover:bg-[#EED288] items-center space-x-4 pr-4 pl-1.5 py-1.5 hover:shadow-[0_0_20px_0] hover:shadow-[#E2C16B]/40 group rounded-full">
+    <button class="border duration-300 border-white/20 select-none flex bg-[#E2C16B] text-[#160e27] items-center space-x-4 pr-4 pl-1.5 py-1.5 hover:bg-[#EED288] hover:shadow-[0_0_20px_0] hover:shadow-[#E2C16B]/40 group rounded-full">
       <div class="p-1.5 rounded-full bg-[#160e27]">
         <LucidePhone class="w-5 h-5 stroke-2 text-[#E2C16B]" />
       </div>

@@ -7,7 +7,7 @@ const LandingHeader = component$(() => {
 
 	return (
 		<header
-			class={`z-[60] max-w-7xl mx-auto w-full sticky duration-300 top-10 overflow-hidden mx-auto px-3 py-2 rounded-full flex items-center top-6 backdrop-blur-lg justify-between`}
+			class={`z-[60] max-w-7xl mx-auto w-full sticky duration-300 top-10 mx-auto px-3 py-2 rounded-full flex items-center top-6 backdrop-blur-lg justify-between`}
 		>
 			<Link href="/" class="flex items-center space-x-3">
 				<Image src="/logo.svg" alt="Incline" height={30} width={30} />
@@ -43,10 +43,10 @@ const LandingHeader = component$(() => {
 				</Link>
 			</nav>
 
-			<button class="hidden md:flex select-none bg-[#E2C16B] text-[#160e27] text-sm items-center space-x-2 relative px-4 py-1.5 rounded-full">
+			<Link href="/contacts" role="button" class="w-max hidden md:flex select-none bg-[#E2C16B] text-[#160e27] text-sm items-center space-x-2 duration-150 relative px-4 py-1.5 rounded-full hover:bg-[#EED288] hover:shadow-[0_0_16px_0] hover:shadow-[#E2C16B]/30">
 				<span class="font-semibold relative">Get in touch</span>
 				<LucideMousePointer class="stroke-2 w-5 h-5 relative" />
-			</button>
+			</Link>
 
 {/*			<button
 				onClick={() => setOpenMobileNav(!openMobileNav)}
