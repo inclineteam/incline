@@ -1,15 +1,16 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link, type DocumentHead } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import Footer from "~/components/footer";
 import LandingHeader from "~/components/landing/header";
 import LandingHeroTexts from "~/components/landing/hero-texts";
 import { metaDefaults } from "~/data/meta-defaults";
 import IcSharpFormatQuote from "~icons/ic/sharp-format-quote";
-import LucideChevronRight from '~icons/lucide/chevron-right'
+import LucideChevronRight from "~icons/lucide/chevron-right";
 
-const metaTitle = 'Incline - Software Development: Web & Mobile apps'
-const description = "We build elegant responsive websites, web applications, and custom software solutions to help your business grow, stand out from the digital market, and boost lead generation!"
+const metaTitle = "Incline - Software Development: Web & Mobile apps";
+const description =
+  "We build elegant responsive websites, web applications, and custom software solutions to help your business grow, stand out from the digital market, and boost lead generation!";
 
 export default component$(() => {
   return (
@@ -48,17 +49,6 @@ export default component$(() => {
                 priority={true}
                 class="pointer-events-none select-none ml-auto -mt-20 -mb-10 relative z-[55]"
               />
-              {/*              <div
-                style={{
-                  backgroundImage: "url('/hero-images.png')",
-                  backgroundSize: 700,
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "right",
-                  width: 700,
-                  height: 700,
-                }}
-                class="ml-auto -mt-28 -mb-10 relative z-[55]"
-              ></div>*/}
             </main>
 
             <div class="pb-40 flex items-center flex-col">
@@ -135,21 +125,24 @@ export default component$(() => {
                   }}
                   class="flex flex-col rounded-[40px] w-[552px] h-[441px] justify-between p-10"
                 >
-                  <Image src="/services.svg" alt="Services" width={80} height={80} />
+                  <Image
+                    src="/services.svg"
+                    alt="Services"
+                    width={80}
+                    height={80}
+                  />
 
                   <div>
-                    <p class="text-[#E2C16B] font-medium mt-4 mb-2">
-                      Services
-                    </p>
+                    <p class="text-[#E2C16B] font-medium mt-4 mb-2">Services</p>
                     <p class="max-w-[44ch] text-white font-light">
                       Giving our clients the best of our efforts to build
                       websites with these services we offer.
                     </p>
 
-                  <button class="border text-sm border-[#3A255B] text-white/70 px-3 mt-6 text-center py-1 rounded-full flex items-center space-x-2">
-                    <span>Check details on our services</span>
-                    <LucideChevronRight class="h-6 w-6" />
-                  </button>
+                    <Link href="/services" role="button" class="w-max border text-sm border-[#3A255B] text-white/70 pr-3 pl-4 mt-8 text-center py-1 rounded-full flex items-center space-x-2 hover:border-white/20 hover:text-white">
+                      <span>Check details on our services</span>
+                      <LucideChevronRight class="h-6 w-6" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -158,71 +151,72 @@ export default component$(() => {
             <div class="flex justify-center items-center">
               <div class="p-8 pl-0">
                 <div
-                style={{
-                  backgroundImage: "url('/projects-box.svg')",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  backgroundSize: "contain",
-                }}
-                class="flex flex-col rounded-[40px] w-[552px] h-[441px] justify-between p-10"
-              >
-                <Image src="/services.svg" alt="Projects" width={80} height={80} />
+                  style={{
+                    backgroundImage: "url('/projects-box.svg')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "contain",
+                  }}
+                  class="flex flex-col rounded-[40px] w-[552px] h-[441px] justify-between p-10"
+                >
+                  <Image
+                    src="/projects.svg"
+                    alt="Projects"
+                    width={80}
+                    height={80}
+                  />
 
-                <div>
-                  <p class="text-[#E2C16B] font-medium mt-4 mb-2">
-                    Projects
-                  </p>
-                  <p class="max-w-[44ch] text-white font-light">
-                    Giving our clients the best of our efforts to build websites
-                    with these services we offer.
-                  </p>
+                  <div>
+                    <p class="text-[#E2C16B] font-medium mt-4 mb-2">Projects</p>
+                    <p class="max-w-[44ch] text-white font-light">
+                      Giving our clients the best of our efforts to build
+                      websites with these services we offer.
+                    </p>
 
-                  {/*<div class="p-px bg-gradient-to-b w-max mt-6 from-[#3A255B] rounded-lg to-[#6D4BA6]">*/}
-                  <button class="border text-sm border-[#3A255B] text-white/70 px-3 mt-6 text-center py-1 rounded-full flex items-center space-x-2">
-                    <span>Check details on our services</span>
-                    <LucideChevronRight class="w-6 h-6" />
-                  </button>
-                  {/*</div>*/}
+                    {/*<div class="p-px bg-gradient-to-b w-max mt-6 from-[#3A255B] rounded-lg to-[#6D4BA6]">*/}
+                    <Link href="/projects" role="button" class="w-max border text-sm border-[#3A255B] text-white/70 pr-3 pl-4 mt-8 text-center py-1 rounded-full flex items-center space-x-2 hover:border-white/20 hover:text-white">
+                      <span>Check details on our services</span>
+                      <LucideChevronRight class="w-6 h-6" />
+                    </Link>
+                    {/*</div>*/}
+                  </div>
                 </div>
-              </div>
               </div>
 
               <div class="w-[552px] h-[441px]">
-                <div class="h-1/2 w-full pb-4 p-px border border-[#412D70]/40 rounded-[40px]">
-                  <div class="text-8xl space-x-10 justify-center pt-10 pb-6 flex font-extrabold">
-                    <div class="relative">
-                    <div class="absolute -top-1 w-24 h-28 rounded-full blur-xl bg-gradient-to-br from-[#E29D6B]/30 to-[#E2C16B]/30"></div>
-                      <span class="text-[#E2C16B]">UI</span>
-                    </div>
+                <div class="pb-2 h-1/2">
+                  <div class="w-full pb-4 p-px border border-[#412D70]/40 rounded-[40px]">
+                    <div class="text-8xl space-x-10 justify-center pt-10 pb-6 flex font-extrabold">
+                      <div class="relative">
+                        <div class="absolute -top-1 w-24 h-28 rounded-full blur-xl bg-gradient-to-br from-[#E29D6B]/30 to-[#E2C16B]/30"></div>
+                        <span class="text-[#E2C16B]">UI</span>
+                      </div>
 
-                    <div class="relative">
-                      <div class="absolute w-20 left-10 h-28 rotate-[60deg] rounded-full blur-xl bg-gradient-to-tl from-[#6B77E2]/30 to-[#6BA9E2]/30"></div> 
-                      <span class="text-[#6B77E2]">UX</span>
-                    </div>
-                  </div>
-                  <p class="text-3xl font-bold bg-gradient-to-r from-[#E2C16B] to-[#6B77E2] bg-clip-text text-transparent w-max mx-auto">
-                    DESIGN
-                  </p>
-                </div>
-                <div class="pt-4 flex h-1/2">
-                  <div class="mr-4 flex-1 pb-4 p-px border border-[#412D70]/40 rounded-[40px]">
-                    <div class="text-7xl space-x-10 justify-center pt-10 pb-6 flex font-extrabold">
-                      <div>
-                        <span class="bg-gradient-to-r from-[#9D6AFF] to-[#7035E0] text-transparent bg-clip-text">WEB</span>
+                      <div class="relative">
+                        <div class="absolute w-20 left-10 h-28 rotate-[60deg] rounded-full blur-xl bg-gradient-to-tl from-[#6B77E2]/30 to-[#6BA9E2]/30"></div>
+                        <span class="text-[#6B77E2]">UX</span>
                       </div>
                     </div>
-                    <p class="text-2xl font-bold bg-gradient-to-r from-[#9D6AFF] to-[#7035E0] bg-clip-text text-transparent w-max mx-auto">
-                      DEVELOPMENT
+                    <p class="text-3xl font-bold bg-gradient-to-r from-[#E2C16B] to-[#6B77E2] bg-clip-text text-transparent w-max mx-auto">
+                      DESIGN
                     </p>
-                  </div>{" "}
-                  <div class="flex-1 pb-4 p-px border border-[#412D70]/40 rounded-[40px]">
-                    <div class="text-7xl space-x-10 justify-center pt-10 pb-6 flex font-extrabold">
-                      <div>
-                        <span class="bg-gradient-to-r from-[#69EBE3] to-[#A9A429] text-transparent bg-clip-text">SEO</span>
+                  </div>
+                </div>
+                <div class="pt-2 h-1/2 ">
+                  <div class="w-full pb-4 p-px border border-[#412D70]/40 rounded-[40px]">
+                    <div class="text-8xl space-x-10 justify-center pt-10 pb-6 flex font-extrabold">
+                      <div class="relative">
+                        <div class="absolute -top-1 w-24 h-28 rounded-full blur-xl bg-gradient-to-br from-[#E29D6B]/30 to-[#E2C16B]/30"></div>
+                        <span class="text-[#E2C16B]">UI</span>
+                      </div>
+
+                      <div class="relative">
+                        <div class="absolute w-20 left-10 h-28 rotate-[60deg] rounded-full blur-xl bg-gradient-to-tl from-[#6B77E2]/30 to-[#6BA9E2]/30"></div>
+                        <span class="text-[#6B77E2]">UX</span>
                       </div>
                     </div>
-                    <p class="text-2xl font-bold bg-gradient-to-r from-[#69EBE3] to-[#A9A429] bg-clip-text text-transparent w-max mx-auto">
-                      CONSULTING
+                    <p class="text-3xl font-bold bg-gradient-to-r from-[#E2C16B] to-[#6B77E2] bg-clip-text text-transparent w-max mx-auto">
+                      DESIGN
                     </p>
                   </div>
                 </div>

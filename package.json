@@ -31,6 +31,7 @@
     "@types/eslint": "8.40.2",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.4.0",
+    "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
     "autoprefixer": "^10.4.14",
@@ -49,6 +50,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
+    "@fontsource/be-vietnam-pro": "^5.0.7",
     "@iconify-json/ic": "^1.1.13",
     "@qwikest/icons": "^0.0.8",
     "@unpic/qwik": "^0.0.24",
@@ -56,6 +58,7 @@
     "dayjs": "^1.11.9",
     "gray-matter": "^4.0.3",
     "lucide": "^0.263.0",
-    "lucide-qwik": "^1.0.0"
+    "lucide-qwik": "^1.0.0",
+    "nprogress": "^0.2.0"
   }
 }
