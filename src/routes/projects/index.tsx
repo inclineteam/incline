@@ -25,7 +25,7 @@ export default component$(() => {
             />
             <p class="mt-4 mb-1 text-white">{project.name}</p>
             <div>
-              <p class="leading-relaxed text-[#958AB2] max-w-[64ch] font-light">
+              <p class="text-sm/relaxed text-[#958AB2] max-w-[64ch] font-light">
                 {project.description}
               </p>
             </div>

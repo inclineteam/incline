@@ -2,76 +2,69 @@ import MainLayout from "~/components/main-layout";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { metaDefaults } from "~/data/meta-defaults";
 import { component$ } from "@builder.io/qwik";
-import LucideTwitter from "~icons/lucide/twitter";
-import LucideFacebook from "~icons/lucide/facebook";
-import LucideGithub from "~icons/lucide/github";
-import LucideLinkedin from "~icons/lucide/linkedin";
-import LucideExternalLink from "~icons/lucide/external-link";
+import LucideTwitter from '~icons/lucide/twitter'
+import LucideFacebook from '~icons/lucide/facebook'
+import LucideGithub from '~icons/lucide/github'
+import LucideLinkedin from '~icons/lucide/linkedin'
+import LucideExternalLink from '~icons/lucide/external-link'
 
-const metaTitle = "Socials | Incline - Software Development: Web & Mobile apps";
-const description =
-  "Follow, and message us on our official social media accounts!";
+const metaTitle = 'Socials | Incline - Software Development: Web & Mobile apps'
+const description = 'Follow, and message us on our official social media accounts!'
 
 export default component$(() => {
   return (
     <MainLayout title="Socials" subtitle={description}>
       <div class="border-t mt-6 pt-12 border-[#B08FFF]/10">
         <div class="gap-4 md:grid-cols-2 md:grid">
-          <div class="p-5 w-full rounded-2xl text-white bg-gradient-to-br shadow-lg border-t border-t-indigo-300/40  from-indigo-500/50 to-indigo-500/20 relative overflow-hidden">
-            <div class="flex font-medium items-start">
-              <div class="mr-5 bg-gradient-to-b from-indigo-400 to-indigo-600 p-2.5 rounded-full">
-                <LucideFacebook class="w-7 h-7 stroke-2 text-indigo-100" />
-              </div>
-              <div>
-                <p class="text-sm text-indigo-400 font-medium">Facebook</p>
-                <p>Incline Team</p>
-              </div>
-              <LucideExternalLink class="ml-auto w-6 h-6 stroke-2 text-white/40" />
+          <div class="p-4 w-full rounded-xl text-white bg-gradient-to-br shadow-[inset_0_0_0_1px] shadow-white/[0.05] from-sky-500/30 to-purple-500/10 relative overflow-hidden">
+           <div class="flex items-center justify-between">
+              <p class="text-sm text-sky-400 font-semibold mb-2">Facebook</p>
+              <LucideExternalLink class="w-6 h-6 stroke-2 text-white/30" />
+           </div>
+            <div class="flex font-medium items-center mt-2">
+              <LucideFacebook class="absolute -bottom-2 w-14 h-14 stroke-2 text-cyan-400/40" />
+              <p class="ml-16">Incline Team</p>
             </div>
           </div>
 
-          <div class="p-5 w-full rounded-2xl text-white bg-gradient-to-br shadow-lg border-t border-t-slate-300/40 from-slate-500/50 to-gray-500/20 relative overflow-hidden">
-            <div class="flex font-medium items-start">
-              <div class="mr-5 bg-gradient-to-b from-slate-800 to-slate-950 p-2.5 rounded-full">
-                <LucideGithub class="w-7 h-7 translate-y-0.5 stroke-2 text-slate-100" />
-              </div>
-              <div>
-                <p class="text-sm text-slate-400 font-medium">Github</p>
-                <p>inclineteam</p>
-              </div>
-              <LucideExternalLink class="ml-auto w-6 h-6 stroke-2 text-white/40" />
-            </div>
-          </div>
-          <div class="p-5 w-full rounded-2xl text-white bg-gradient-to-br shadow-lg border-t border-cyan-300/40 from-cyan-500/50 to-teal-500/20 relative overflow-hidden">
-            <div class="flex font-medium items-start">
-              <div class="mr-5 bg-gradient-to-b from-cyan-400 to-cyan-600 p-2.5 rounded-full">
-                <LucideTwitter class="w-7 h-7 stroke-2 text-sky-100" />
-              </div>
-              <div>
-                <p class="text-sm text-cyan-300 font-medium">Twitter</p>
-                <p>@inclineteam_</p>
-              </div>
-              <LucideExternalLink class="ml-auto w-6 h-6 stroke-2 text-white/40" />
+          <div class="p-4 w-full rounded-xl text-white bg-gradient-to-br shadow-[inset_0_0_0_1px] shadow-white/[0.05] from-slate-500/30 to-purple-500/10 relative overflow-hidden">
+           <div class="flex items-center justify-between">
+              <p class="text-sm text-slate-300 font-semibold mb-2">Github</p>
+              <LucideExternalLink class="w-6 h-6 stroke-2 text-white/30" />
+           </div>
+            <div class="flex font-medium items-center mt-2">
+              <LucideGithub class="absolute -bottom-2 w-14 h-14 stroke-2 text-slate-400/40" />
+              <p class="ml-16">inclineteam</p>
             </div>
           </div>
 
-          <div class="p-5 w-full rounded-2xl text-white bg-gradient-to-br shadow-lg border-t border-white/[0.05] border-violet-300/40 from-violet-500/50 to-purple-500/20 relative overflow-hidden">
-            <div class="flex font-medium items-start">
-              <div class="mr-5 bg-gradient-to-b from-violet-500 to-violet-700 p-2.5 rounded-full">
-                <LucideLinkedin class="w-7 h-7 stroke-2 text-sky-100" />
-              </div>
-              <div>
-                <p class="text-sm text-violet-300 font-medium">LinkedIn</p>
-                <p>Incline Team</p>
-              </div>
-              <LucideExternalLink class="ml-auto w-6 h-6 stroke-2 text-white/40" />
+                    <div class="p-4 w-full rounded-xl text-white bg-gradient-to-br shadow-[inset_0_0_0_1px] shadow-white/[0.05] from-purple-500/30 to-indigo-500/10 relative overflow-hidden">
+           <div class="flex items-center justify-between">
+              <p class="text-sm text-purple-300 font-semibold mb-2">LinkedIn</p>
+              <LucideExternalLink class="w-6 h-6 stroke-2 text-white/30" />
+           </div>
+            <div class="flex font-medium items-center mt-2">
+              <LucideLinkedin class="absolute -bottom-2 w-14 h-14 stroke-2 text-purple-400/40" />
+              <p class="ml-16">Incline Team</p>
             </div>
           </div>
+
+          <div class="p-4 w-full rounded-xl text-white bg-gradient-to-br shadow-[inset_0_0_0_1px] shadow-white/[0.05] from-sky-500/30 to-purple-500/10 relative overflow-hidden">
+           <div class="flex items-center justify-between">
+            <p class="text-sm text-cyan-400 font-semibold mb-2">Twitter</p>
+              <LucideExternalLink class="w-6 h-6 stroke-2 text-white/30" />
+           </div>
+            <div class="flex font-medium items-center mt-2">
+              <LucideTwitter class="absolute -bottom-2 w-14 h-14 stroke-2 text-cyan-400/40" />
+              <p class="ml-16">@inclineteam_</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </MainLayout>
   );
-});
+})
 
 export const head: DocumentHead = {
   title: metaTitle,
@@ -87,7 +80,8 @@ export const head: DocumentHead = {
     },
     {
       property: "og:description",
-      content: description,
+      content:
+        description,
     },
     {
       property: "twitter:title",
