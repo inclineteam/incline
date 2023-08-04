@@ -2,8 +2,9 @@ import LucideMousePointer from "~icons/lucide/mouse-pointer";
 import { links } from "~/data/links";
 import { Image } from "@unpic/qwik";
 import { Link } from "@builder.io/qwik-city";
+import { component$ } from "@builder.io/qwik";
 
-const Footer = () => {
+const Footer = component$(() => {
 	return (
 		<footer class="pt-10 pb-20 w-full border-t text-sm border-[#271F3C] mx-auto">
 			<div class="max-w-7xl lg:flex lg:items-start mx-auto px-10">
@@ -110,6 +111,6 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
+});
 
 export default Footer;

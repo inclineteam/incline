@@ -7,6 +7,13 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
+// Self-hosted font insted of CDN
+import '@fontsource/be-vietnam-pro/300.css'
+import '@fontsource/be-vietnam-pro'
+import '@fontsource/be-vietnam-pro/500.css'
+import '@fontsource/be-vietnam-pro/600.css'
+import '@fontsource/be-vietnam-pro/700.css'
+import '@fontsource/be-vietnam-pro/800.css'
 
 export default component$(() => {
   /**
@@ -22,11 +29,6 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
-        <link rel="preconnect" href="https://fonts.bunny.net" />
-        <link
-          href="https://fonts.bunny.net/css?family=be-vietnam-pro:300,400,500,600,700,800,900&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body lang="en">
         <RouterOutlet />
