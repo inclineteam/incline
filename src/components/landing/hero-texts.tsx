@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import LucideShapes from '~icons/lucide/shapes'
-import LucidePhone from '~icons/lucide/phone'
-import LucideArrowRight from '~icons/lucide/arrow-right'
+import LucideShapes from "~icons/lucide/shapes";
+import LucidePhone from "~icons/lucide/phone";
+import LucideArrowRight from "~icons/lucide/arrow-right";
 
 const LandingHeroTexts = component$(() => {
   return (
@@ -10,7 +10,7 @@ const LandingHeroTexts = component$(() => {
       <TitleCTA />
       <Title />
       <Description />
-      <div class="mt-10 flex center space-x-3">
+      <div class="mt-10 flex flex-col md:flex-row center gap-3">
         <CTAButton />
         <BesideCTAButton />
       </div>
@@ -35,9 +35,9 @@ const Title = () => (
 
 const Description = () => (
   <p class="md:text-lg text-base leading-relaxed font-light max-w-[40ch] text-[#958AB2] mx-auto">
-    We build elegant responsive websites, web applications, and custom
-    software solutions to help your business grow, stand out from the digital
-    market, and boost lead generation!
+    We build elegant responsive websites, web applications, and custom software
+    solutions to help your business grow, stand out from the digital market, and
+    boost lead generation!
   </p>
 );
 
@@ -48,9 +48,7 @@ const CTAButton = () => (
         <LucidePhone class="w-5 h-5 stroke-2 text-[#E2C16B]" />
       </div>
       <span class="font-semibold">Contact us</span>
-      <LucideArrowRight
-        class="stroke-2 duration-150 group-hover:translate-x-1"
-      />
+      <LucideArrowRight class="stroke-2 duration-150 group-hover:translate-x-1" />
     </button>
   </Link>
 );
@@ -59,10 +57,8 @@ const BesideCTAButton = () => (
   <Link href="/projects">
     <button class="select-none flex bg-[#160e27] border border-[#B08FFF]/10 hover:border-[#B08FFF]/30 group duration-150 text-white items-center space-x-3 px-5 z-[55] py-2.5 rounded-full">
       <span class="font-semibold">See projects we've built</span>
-      <LucideShapes
-        class="w-6 stroke-2 h-6 text-[#E2C16B] group-hover:scale-125 duration-150 group-hover:-translate-y-0.5 group-hover:drop-shadow-[0_0_12px] group-hover:drop-shadow-[#E2C16B]/10"
-      />
+      <LucideShapes class="w-6 stroke-2 h-6 text-[#E2C16B] group-hover:scale-125 duration-150 group-hover:-translate-y-0.5 group-hover:drop-shadow-[0_0_12px] group-hover:drop-shadow-[#E2C16B]/10" />
     </button>
   </Link>
 );
-export default LandingHeroTexts
+export default LandingHeroTexts;

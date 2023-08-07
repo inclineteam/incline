@@ -2,20 +2,25 @@ import MainLayout from "~/components/main-layout";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { metaDefaults } from "~/data/meta-defaults";
 import { Image } from "@unpic/qwik";
-import LucideGlobe from '~icons/lucide/globe'
-import LucideArrowUpRight from '~icons/lucide/arrow-up-right'
-import LucideGithub from '~icons/lucide/github'
+import LucideGlobe from "~icons/lucide/globe";
+import LucideArrowUpRight from "~icons/lucide/arrow-up-right";
+import LucideGithub from "~icons/lucide/github";
 import { component$ } from "@builder.io/qwik";
 
-const metaTitle = 'Projects | Incline - Software Development: Web & Mobile apps'
-const description = 'We also do team projects to help us collaborate with each other, making the team in sync when doing tasks.'
+const metaTitle =
+  "Projects | Incline - Software Development: Web & Mobile apps";
+const description =
+  "We also do team projects to help us collaborate with each other, making the team in sync when doing tasks.";
 
 export default component$(() => {
   return (
     <MainLayout title="Projects" subtitle={description}>
       <div class="border-t mt-6 pt-12 border-[#B08FFF]/10">
         {data.map((project, i) => (
-          <div key={i} class="border-b mb-6 last:border-transparent border-[#B08FFF]/10 pb-6">
+          <div
+            key={i}
+            class="border-b mb-6 last:border-transparent border-[#B08FFF]/10 pb-6"
+          >
             <Image
               src={project.icon}
               width={40}
@@ -54,7 +59,7 @@ export default component$(() => {
                       <span class="pb-1 -mb-1 hover:text-white border-b border-transparent hover:border-[#958AB2] flex items-center">
                         <LucideGithub class="mr-2 stroke-2 w-5 h-5" />
                         Github
-                         <LucideArrowUpRight class="w-5 h-5 stroke-2 ml-1" />
+                        <LucideArrowUpRight class="w-5 h-5 stroke-2 ml-1" />
                       </span>
                     </a>
                   </>
@@ -65,9 +70,9 @@ export default component$(() => {
                     rel="noopener noreferrer"
                   >
                     <span class="pb-1 -mb-1 hover:text-white border-b border-transparent hover:border-[#958AB2] flex items-center">
-                     <LucideGithub class="mr-2 stroke-2 w-5 h-5" />
+                      <LucideGithub class="mr-2 stroke-2 w-5 h-5" />
                       Github
-                       <LucideArrowUpRight class="w-5 h-5 stroke-2 ml-1" />
+                      <LucideArrowUpRight class="w-5 h-5 stroke-2 ml-1" />
                     </span>
                   </a>
                 )}
@@ -89,7 +94,7 @@ export default component$(() => {
       </div>
     </MainLayout>
   );
-})
+});
 
 const data = [
   {
@@ -125,8 +130,7 @@ export const head: DocumentHead = {
     },
     {
       property: "og:description",
-      content:
-        description,
+      content: description,
     },
     {
       property: "twitter:title",

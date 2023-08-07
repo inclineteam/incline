@@ -3,8 +3,9 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { metaDefaults } from "~/data/meta-defaults";
 import { component$ } from "@builder.io/qwik";
 
-const metaTitle = 'Services | Incline - Software Development: Web & Mobile apps'
-const description = 'Check out all the services our agency offers.'
+const metaTitle =
+  "Services | Incline - Software Development: Web & Mobile apps";
+const description = "Check out all the services our agency offers.";
 
 export default component$(() => {
   return (
@@ -27,12 +28,16 @@ export default component$(() => {
           Our Team
         </h1>
         <p class="text-[#958AB2] font-light max-w-[64ch] mt-2 text-base/relaxed">
-           We are a passionate and enthusiastic group of tech enthusiasts who thrive on turning ideas into reality. Our team is driven by a collective commitment to excellence, fueled by the love of technology, and empowered by the joy of creating innovative solutions that make a positive impact.
+          We are a passionate and enthusiastic group of tech enthusiasts who
+          thrive on turning ideas into reality. Our team is driven by a
+          collective commitment to excellence, fueled by the love of technology,
+          and empowered by the joy of creating innovative solutions that make a
+          positive impact.
         </p>
       </div>
     </MainLayout>
   );
-})
+});
 
 export const head: DocumentHead = {
   title: metaTitle,
@@ -48,8 +53,7 @@ export const head: DocumentHead = {
     },
     {
       property: "og:description",
-      content:
-        description,
+      content: description,
     },
     {
       property: "twitter:title",

@@ -2,19 +2,18 @@ import MainLayout from "~/components/main-layout";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { metaDefaults } from "~/data/meta-defaults";
 import { component$ } from "@builder.io/qwik";
-import LucideMailCheck from '~icons/lucide/mail-check'
+import LucideMailCheck from "~icons/lucide/mail-check";
 
-const metaTitle = 'Contact | Incline - Software Development: Web & Mobile apps'
-const description = 'You can email us on inclinedevs@gmail.com. Alternatively, you can directly write it here with our own composer.'
+const metaTitle = "Contact | Incline - Software Development: Web & Mobile apps";
+const description =
+  "You can email us on inclinedevs@gmail.com. Alternatively, you can directly write it here with our own composer.";
 
 export default component$(() => {
   return (
     <MainLayout title="Contact" subtitle={description}>
       <div class="border-t mt-6 pt-12 border-[#B08FFF]/10">
         <h1 class="mb-4 text-[#E2C16B]">Compose Email</h1>
-        <form
-          action="mailto:inclinedevs@gmail.com"
-        >
+        <form action="mailto:inclinedevs@gmail.com">
           <div class="mb-6 group">
             <label
               html-for="subject"
@@ -65,7 +64,7 @@ export default component$(() => {
       </div>
     </MainLayout>
   );
-})
+});
 
 export const head: DocumentHead = {
   title: metaTitle,
@@ -81,8 +80,7 @@ export const head: DocumentHead = {
     },
     {
       property: "og:description",
-      content:
-        description,
+      content: description,
     },
     {
       property: "twitter:title",

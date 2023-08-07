@@ -1,17 +1,17 @@
 import { component$ } from "@builder.io/qwik";
 import { Link, useLocation } from "@builder.io/qwik-city";
-import type {QRL} from "@builder.io/qwik";
+import type { QRL } from "@builder.io/qwik";
 import type { JSX } from "@builder.io/qwik/jsx-runtime";
 
 interface LinkItem {
   link: string;
   label: string;
-  Icon: QRL<() => JSX.Element>
+  Icon: QRL<() => JSX.Element>;
 }
 
 const LinkSidebarItem = component$<LinkItem>(({ link, label, Icon }) => {
   const location = useLocation();
-  const active = link + '/' === location.url.pathname
+  const active = link + "/" === location.url.pathname;
 
   return (
     <Link
@@ -22,7 +22,11 @@ const LinkSidebarItem = component$<LinkItem>(({ link, label, Icon }) => {
           : "hover:text-white text-[#958AB2] hover:bg-[#1E1536]"
       }`}
     >
-      <span class={`flex w-max items-center relative pr-8 ${active && "bg-[#160e27]"}`}>
+      <span
+        class={`flex w-max items-center relative pr-8 ${
+          active && "bg-[#160e27]"
+        }`}
+      >
         {/* @ts-ignore */}
         <Icon class="w-6 h-6 stroke-2 mr-3" />
         {label}

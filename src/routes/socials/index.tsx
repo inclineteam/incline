@@ -26,7 +26,12 @@ export default component$(() => {
                 <p class="text-sm text-indigo-400 font-medium">Facebook</p>
                 <p>Incline Team</p>
               </div>
-              <a href="https://www.facebook.com/inclineteam/" target="_blank" rel="noopener noreferrer" class="ml-auto block">
+              <a
+                href="https://www.facebook.com/inclineteam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-auto block"
+              >
                 <LucideExternalLink class="w-6 h-6 stroke-2 text-white/40 hover:text-white" />
               </a>
             </div>
@@ -41,7 +46,12 @@ export default component$(() => {
                 <p class="text-sm text-slate-400 font-medium">Github</p>
                 <p>inclineteam</p>
               </div>
-              <a href="https://www.github.com/inclineteam/" target="_blank" rel="noopener noreferrer" class="ml-auto block">
+              <a
+                href="https://www.github.com/inclineteam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-auto block"
+              >
                 <LucideExternalLink class="w-6 h-6 stroke-2 text-white/40 hover:text-white" />
               </a>
             </div>
@@ -55,7 +65,12 @@ export default component$(() => {
                 <p class="text-sm text-cyan-300 font-medium">Twitter</p>
                 <p>@inclineteam_</p>
               </div>
-              <a href="https://www.x.com/inclineteam_/" target="_blank" rel="noopener noreferrer" class="ml-auto block">
+              <a
+                href="https://www.x.com/inclineteam_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-auto block"
+              >
                 <LucideExternalLink class="w-6 h-6 stroke-2 text-white/40 hover:text-white" />
               </a>
             </div>
@@ -70,7 +85,12 @@ export default component$(() => {
                 <p class="text-sm text-violet-300 font-medium">LinkedIn</p>
                 <p>Incline Team</p>
               </div>
-              <a href="https://www.linkedin.com/company/inclineteam/" target="_blank" rel="noopener noreferrer" class="ml-auto block">
+              <a
+                href="https://www.linkedin.com/company/inclineteam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-auto block"
+              >
                 <LucideExternalLink class="w-6 h-6 stroke-2 text-white/40 hover:text-white" />
               </a>
             </div>
