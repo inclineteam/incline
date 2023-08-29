@@ -42,6 +42,58 @@ export default component$(() => {
           positive impact.
         </p>
       </div>
+      <br /> <br />
+      <div class="grid gap-10 row-gap-8 text-white mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Oliver Aguilerra</p>
+            <p class="text-sm text-[#958AB2]">Product Manager</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Marta Clermont</p>
+            <p class="text-sm text-[#958AB2]">Design Team Lead</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Anthony Geek</p>
+            <p class="text-sm text-[#958AB2]">CTO, Lorem Inc.</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Alice Melbourne</p>
+            <p class="text-sm text-[#958AB2]">Human Resources</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Martin Garix</p>
+            <p class="text-sm text-[#958AB2]">Bad boy</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Andrew Larkin</p>
+            <p class="text-sm text-[#958AB2]">Backend Developer</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+          <div class="flex flex-col justify-center">
+            <p class="text-lg font-bold">Sophie Denmo</p>
+            <p class="text-sm text-[#958AB2]">Designer UI/UX</p>
+          </div>
+        </div>
+    </div>
     </MainLayout>
   );
 });
