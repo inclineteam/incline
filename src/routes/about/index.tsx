@@ -66,7 +66,7 @@ export default component$(() => {
           </div>
         </div>
         <div class="flex">
-          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="https://media.licdn.com/dms/image/D5603AQEJapVYKw_KXQ/profile-displayphoto-shrink_800_800/0/1691999498887?e=1698883200&v=beta&t=9Tr0llF-W5I021jlOALq4ej2dfYQvHrhQaPN4rsKSqs" alt="Person" />
+          <img class="object-cover w-20 h-20 mr-4 rounded-full shadow" src="ttps://media.licdn.com/dms/image/D5603AQEJapVYKw_KXQ/profile-displayphoto-shrink_800_800/0/1691999498887?e=1698883200&v=beta&t=9Tr0llF-W5I021jlOALq4ej2dfYQvHrhQaPN4rsKSqs" alt="Person" />
           <div class="flex flex-col justify-center">
             <p class="text-lg font-bold">Harold Martin Patacsil</p>
             <p class="text-sm text-[#958AB2]">Frontend Developer</p>
